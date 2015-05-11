@@ -1,9 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  a(href='/turn') Turn
-  a(href='/crazy-eyes') Craaaazy Eyes
-  a(href='/dance') Dance, Robot, Dance!
-  a(href='/stop') STOP IT ALREADY
+	//- h1= title
+	div.container
+		div.button.drive-forward
+			span
+				a(href="/drive-forward")
+		div.button.turn-right
+			span
+				a(href='/turn-right')
+		div.button.turn-left
+			span
+				a(href='/turn-left')
+		div.button.crazy-eyes
+			span
+				a(href='/crazy-eyes')
+		div.button.dance-robot
+			span
+				a(href='/dance') 
+		div.button.stop
+			span
+				a(href='/stop') 

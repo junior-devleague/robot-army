@@ -10,13 +10,23 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Robot Army' });
 });
 
+router.get('/drive-forward', function(req, res, next) {
+	MipControl.driveForward();
+	res.render('index', {title: 'Robot Army'});
+})
+
 router.get('/crazy-eyes', function(req, res, next) {
 	MipControl.crazyEyes();
 	res.render('index', {title: 'Robot Army'});
 });
 
-router.get('/turn', function(req, res, next) {
-	MipControl.turn();
+router.get('/turn-left', function(req, res, next) {
+	MipControl.turnLeft();
+	res.render('index', {title: 'Robot Army'});
+});
+
+router.get('/turn-right', function(req, res, next) {
+	MipControl.turnRight();
 	res.render('index', {title: 'Robot Army'});
 });
 
