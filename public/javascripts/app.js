@@ -3,6 +3,23 @@ $(function(){
 		evt.preventDefault();
 	});
 
+	$('.stand').click(function(evt){
+		$.ajax({
+		  url: "/stand",
+		}).done(function() {
+			console.log('stand up');
+		});
+	});
+
+	$('.love').click(function(evt){
+		$.ajax({
+		  url: "/love",
+		}).done(function() {
+			console.log('stand up');
+		});
+	});
+
+
 	$('.drive-forward').click(function(evt){
 		$.ajax({
 		  url: "/drive-forward",

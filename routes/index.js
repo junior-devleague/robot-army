@@ -10,34 +10,44 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Robot Army' });
 });
 
+router.get('/stand', function(req, res, next) {
+	MipControl.getUp();
+	res.json({result: 'ok'});
+});
+
+router.get('/love', function(req, res, next) {
+	MipControl.loveMe();
+	res.json({result: 'ok'});
+});
+
 router.get('/drive-forward', function(req, res, next) {
 	MipControl.driveForward();
-	res.render('index', {title: 'Robot Army'});
-})
+	res.json({result: 'ok'});
+});
 
 router.get('/crazy-eyes', function(req, res, next) {
 	MipControl.crazyEyes();
-	res.render('index', {title: 'Robot Army'});
+	res.json({result: 'ok'});
 });
 
 router.get('/turn-left', function(req, res, next) {
 	MipControl.turnLeft();
-	res.render('index', {title: 'Robot Army'});
+	res.json({result: 'ok'});
 });
 
 router.get('/turn-right', function(req, res, next) {
 	MipControl.turnRight();
-	res.render('index', {title: 'Robot Army'});
+	res.json({result: 'ok'});
 });
 
 router.get('/dance', function(req, res, next) {
 	MipControl.dance();
-	res.render('index', {title: 'Robot Army'});
+	res.json({result: 'ok'});
 });
 
 router.get('/stop', function(req, res, next) {
 	MipControl.stop();
-	res.render('index', {title: 'Robot Army'});
+	res.json({result: 'ok'});
 });
 
 module.exports = router;
