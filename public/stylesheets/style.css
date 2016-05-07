@@ -55,6 +55,13 @@ div.dance-robot {
 	background-size: 100% auto;
 }
 
+div.love {
+  background-image: url(../images/heart.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 div.stop {
 	background-image: url(../images/stop.png);
 	background-size: 95% auto;
@@ -81,12 +88,12 @@ div.turn-left {
 	background-size: 100% auto;
 }
 
-div.crazy-eyes {
+/*div.crazy-eyes {
 	background-image: url(../images/crazy-eyes.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
-
+*/
 div.button:hover{
 	background-color: #88CC88;
 }

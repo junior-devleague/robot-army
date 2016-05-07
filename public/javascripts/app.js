@@ -3,14 +3,6 @@ $(function(){
 		evt.preventDefault();
 	});
 
-	$('.stand').click(function(evt){
-		$.ajax({
-		  url: "/stand",
-		}).done(function() {
-			console.log('stand up');
-		});
-	});
-
 	$('.love').click(function(evt){
 		$.ajax({
 		  url: "/love",
@@ -41,14 +33,6 @@ $(function(){
 		  url: "/turn-left",
 		}).done(function() {
 			console.log('turned left');
-		});
-	});
-
-	$('.crazy-eyes').click(function(evt){
-		$.ajax({
-		  url: "/crazy-eyes",
-		}).done(function() {
-			console.log('crazy eyed');
 		});
 	});
 

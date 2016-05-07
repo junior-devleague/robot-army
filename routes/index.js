@@ -10,11 +10,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Robot Army' });
 });
 
-router.get('/stand', function(req, res, next) {
-	MipControl.getUp();
-	res.json({result: 'ok'});
-});
-
 router.get('/love', function(req, res, next) {
 	MipControl.loveMe();
 	res.json({result: 'ok'});
@@ -22,11 +17,6 @@ router.get('/love', function(req, res, next) {
 
 router.get('/drive-forward', function(req, res, next) {
 	MipControl.driveForward();
-	res.json({result: 'ok'});
-});
-
-router.get('/crazy-eyes', function(req, res, next) {
-	MipControl.crazyEyes();
 	res.json({result: 'ok'});
 });
 
